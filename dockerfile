@@ -1,11 +1,9 @@
-# Use Java base image
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 
-# Set working directory
 WORKDIR /app
 
-# Copy jar file
 COPY target/*.jar app.jar
 
-# Run application
+EXPOSE 8080
+
 ENTRYPOINT ["java", "-jar", "app.jar"]
