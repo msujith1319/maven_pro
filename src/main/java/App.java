@@ -2,7 +2,7 @@ package com.example;
 
 public class App {
     public static void main(String[] args) {
-        System.out.println("Application started successfully");
+        System.out.println("hello Sujith");
         while (true) {
             try {
                 Thread.sleep(10000);
